@@ -1,0 +1,25 @@
+//iii. Write a function convertCurrency(float amount, float rate) to convert an amount
+//from one currency to another. Test it with user input in the main function.
+
+#include <iostream>
+using namespace std;
+
+float convertCurrency(float amount, float rate) {
+    return amount * rate;
+}
+
+int main() {
+    float amount, rate, convertedAmount;
+
+    cout << "Enter amount: ";
+    cin >> amount;
+
+    cout << "Enter conversion rate: ";
+    cin >> rate;
+
+    convertedAmount = convertCurrency(amount, rate);
+
+    cout << "Converted amount = " << convertedAmount;
+
+    return 0;
+}
